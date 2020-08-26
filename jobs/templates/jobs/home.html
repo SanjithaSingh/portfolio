@@ -30,22 +30,22 @@
             <div class="text-center">
                 <h1>I am Sanjitha Singh</h1>
                 <p>Full Stack Engineer | Python Developer</p>
-                <p>
-                    <a class="fa-icon fa-icon-2x" href="https://facebook.com/" title="">
-                        <i class="fa fa-facebook"></i>
-                    </a>
-                    <a class="fa-icon fa-icon-2x" href="https://twitter.com/" title="">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                    <a class="fa-icon fa-icon-2x" href="https://dribbble.com/" title="">
-                        <i class="fa fa-dribbble"></i>
-                    </a>
-                    <a class="fa-icon fa-icon-2x" href="https://www.linkedin.com/" title="">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
-                    <a class="fa-icon fa-icon-2x" href="https://vimeo.com/" title="">
-                        <i class="fa fa-vimeo"></i>
-                    </a>
+
+                <a class="fa-icon fa-icon-2x" href="https://facebook.com/" title="">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a class="fa-icon fa-icon-2x" href="https://twitter.com/" title="">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a class="fa-icon fa-icon-2x" href="https://dribbble.com/" title="">
+                    <i class="fa fa-dribbble"></i>
+                </a>
+                <a class="fa-icon fa-icon-2x" href="https://www.linkedin.com/" title="">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+                <a class="fa-icon fa-icon-2x" href="https://vimeo.com/" title="">
+                    <i class="fa fa-vimeo"></i>
+                </a>
                 </p>
             </div>
         </header>
@@ -86,8 +86,10 @@
                             <div class="row">
                                 {%for job in jobs.all%}
                                 <div class="col-md-4">
-                                    <img src="{{job.image.url}}" class="img-responsive" height="300" width="300">
 
+                                    <img src="{{job.image.url}}" class="img-responsive" height="300" width="300">
+                                    <p class=""><a href="{% url 'detail' job.id%}" class="btn btn-primary"> View
+                                            detail</a></p>
                                     <p>{{job.summary}}</p>
                                 </div>
                                 {% endfor %}
