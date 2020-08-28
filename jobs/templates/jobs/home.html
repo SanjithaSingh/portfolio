@@ -91,6 +91,12 @@
                         </div>
                         <div class="py-1 px-1 mx-1 my-1">
                             <h4> {{project.title}}</h4>
+                            {% if project.isLive %}
+                            <span class="btn btn-danger btn-sm">
+                                <i class="fas fa-circle"></i>
+                                Live
+                            </span>
+                            {% endif%}
                             <p> {{project.summary}}</p>
                             <p>
                                 {%for stack in project.stack.all %}
@@ -98,7 +104,13 @@
                                 {% endfor %}
                             </p>
                             <i class="fab fa-github"></i>
+                            {% if project.isLive %}
                             <i class="fas fa-globe"></i>
+                            {% else %}
+                            <span class="faded-icon" style="color: lightgray;">
+                                <i class="fas fa-globe"></i>
+                            </span>
+                            {% endif%}
                         </div>
                     </div>
                 </div>
@@ -125,6 +137,22 @@
                                                 <div class="divider-custom-line"></div>
                                             </div>
                                             <!--  Modal - Text-->
+                                            <div class="modal-links" style="font-size:3em;">
+                                                <a href="{{project.githubURL}}" target="_blank"><i
+                                                        class="fab fa-github"></i></a>
+                                                {% if project.isLive %}
+                                                <a href="{{project.liveURL}}" target="_blank">
+                                                    <i class="fas fa-globe"></i>
+                                                    <span class="btn btn-outline-danger btn-sm">
+                                                        <i class="fas fa-circle"></i>
+                                                        Live
+                                                    </span>
+                                                </a>
+
+                                                {% endif%}
+                                            </div>
+
+
                                             <p class="mb-5">
                                                 {{project.description}}
                                             </p>

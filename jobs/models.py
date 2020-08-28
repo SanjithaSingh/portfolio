@@ -29,6 +29,7 @@ class Project(models.Model):
     githubURL=models.URLField()
     liveURL=models.URLField(default=None)
     stack = models.ManyToManyField(Stack)
+    isLive=models.BooleanField(default=False)
 
     def __str__(self):
         return self.title

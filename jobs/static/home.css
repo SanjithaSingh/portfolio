@@ -159,7 +159,7 @@ sup {
 }
 
 a {
-  color: #ffc93c;
+  color: #000;
   text-decoration: none;
   background-color: transparent;
 }
@@ -10272,4 +10272,8 @@ form .row:first-child .floating-label-form-group {
 
 #page-top{
   letter-spacing: 0.1rem;
+}
+
+.faded-icon{
+  color: lightgray!important;
 }
