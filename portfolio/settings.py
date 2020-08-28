@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = 'd8=%!@=te1ovj0gv^mdw%*jpfv#yv2+yef&%5#*g3oa1)77u#d'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['cryptic-thicket-04907.herokuapp.com']
 
 
 # Application definition
