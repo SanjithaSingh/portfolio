@@ -211,15 +211,16 @@
                                     class="fas fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <div class="py-1 px-1 mx-1 my-1 img-thumbnail">
-                            <h4> {{job.company}}</h4>
-                            <p> {{job.role}}</p>
+                        <div class="p-4 m-1 text-center rounded" style="background:white;">
+                            <h4 class="text-secondary"> {{job.company}}</h4>
+                            <p class="text-uppercase"> {{job.role}}</p>
+                            <p>{{job.project}}</p>
                             <p>
                                 {%for stack in job.stack.all %}
                                 <span class="btn btn-primary btn-sm mr-1 mt-1">{{stack}}</span>
                                 {% endfor %}
                             </p>
-                            <button class="btn btn-secondary mt-2 ml-5">Contributions &rarr;</button>
+                            <button class="btn btn-secondary mt-2">Contributions &rarr;</button>
                         </div>
 
                     </div>
