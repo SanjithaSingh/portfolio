@@ -3,322 +3,439 @@
 {% load static %}
 
 <head>
-    <meta charset="UTF-8">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width,initial-scale=1" name="viewport">
-    <meta content="description" name="description">
-    <meta name="google" content="notranslate" />
-    <meta content="Mashup templates have been developped by Orson.io team" name="author">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Portfolio for Sanjitha Singh" />
+    <meta name="author" content="Sanjitha Singh" />
+    <title>Sanjitha Singh</title>
 
-    <!-- Disable tap highlight on IE -->
-    <meta name="msapplication-tap-highlight" content="no">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
-    <link href="./assets/favicon.ico" rel="icon">
-
-    <title></title>
-
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Core theme CSS (includes Bootstrap)-->
     <link href="{% static 'home.css' %}" rel="stylesheet">
 </head>
 
-<body class="">
-
-    <!-- Add your content of header -->
-    <div class="background-color-layer"></div>
-    <main class="content-wrapper">
-        <header class="white-text-container section-container">
-            <div class="text-center">
-                <h1>I am Sanjitha Singh</h1>
-                <p>Full Stack Engineer | Python Developer</p>
-
-                <a class="fa-icon fa-icon-2x" href="https://facebook.com/" title="">
-                    <i class="fa fa-facebook"></i>
-                </a>
-                <a class="fa-icon fa-icon-2x" href="https://twitter.com/" title="">
-                    <i class="fa fa-twitter"></i>
-                </a>
-                <a class="fa-icon fa-icon-2x" href="https://dribbble.com/" title="">
-                    <i class="fa fa-dribbble"></i>
-                </a>
-                <a class="fa-icon fa-icon-2x" href="https://www.linkedin.com/" title="">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-                <a class="fa-icon fa-icon-2x" href="https://vimeo.com/" title="">
-                    <i class="fa fa-vimeo"></i>
-                </a>
-                </p>
-            </div>
-        </header>
-
-
-
-        <!-- Add your site or app content here -->
-
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
         <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">Sanjitha Singh</a>
+            <button
+                class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
+                type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                            href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                            href="#work-experience">Experience</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                            href="#education">Education</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                            href="#about">About</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                            href="#contact">Contact</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Masthead-->
+    <header class="masthead bg-primary text-dark text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <!-- Masthead Avatar Image-->
+            <img class="masthead-avatar mb-5" src="{% static 'avataaars.svg'%}" alt="" />
+            <!-- Masthead Heading-->
+            <h1 class="masthead-heading text-uppercase mb-0">Sanjitha Singh</h1>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Masthead Subheading-->
+            <p class="masthead-subheading font-weight-light mb-0">Full Stack Developer - Data Scientist</p>
+        </div>
+    </header>
+    <!-- Portfolio Section-->
+    <section class="page-section portfolio" id="portfolio">
+        <div class="container">
+            <!-- Portfolio Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Portfolio Grid Items-->
             <div class="row">
-                <div class="col-xs-12">
-
-                    <div class="card">
-                        <div class="card-block">
-                            <h2>About me</h2>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <p><img src="{% static 'profile_image.jpg'%}" class="img-responsive" alt=""></p>
-                                </div>
-                                <div class="col-md-8">
-
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                    </p>
-                                    <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                        culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                                </div>
-                            </div>
+                <!-- Portfolio Item-->
+                {%for project in projects.all%}
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal{{project.id}}">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
                         </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-block">
-                            <h2>Projects</h2>
-                            <div class="row">
-                                {%for job in jobs.all%}
-                                <div class="col-md-4">
-
-                                    <img src="{{job.image.url}}" class="img-responsive" height="300" width="300">
-                                    <p class=""><a href="{% url 'detail' job.id%}" class="btn btn-primary"> View
-                                            detail</a></p>
-                                    <p>{{job.summary}}</p>
-                                </div>
+                        <div class="py-1 px-1 mx-1 my-1">
+                            <h4> {{project.title}}</h4>
+                            <p> {{project.summary}}</p>
+                            <p>
+                                {%for stack in project.stack.all %}
+                                <span class="btn btn-primary btn-sm mr-1 mt-1">{{stack}}</span>
                                 {% endfor %}
-
-                            </div>
+                            </p>
+                            <i class="fab fa-github"></i>
+                            <i class="fas fa-globe"></i>
                         </div>
                     </div>
+                </div>
 
-                    <div class="card">
-                        <div class="card-block">
-                            <h2>Work</h2>
-                            <div class="work-experience">
-                                <small class="date">2017-2015</small>
-                                <h3 class="h5 date-title">Web developer - <a href="http://en.orson.io"
-                                        title="Create professionnal website">Orson.io</a></h3>
+                <!-- Portfolio Modal -->
+                <div class="portfolio-modal modal fade" id="portfolioModal{{project.id}}" tabindex="-1" role="dialog"
+                    aria-labelledby="portfolioModal1Label" aria-hidden="true">
+                    <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                            </button>
+                            <div class="modal-body text-center">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-8">
 
-
-                                <p>Leo vel orci porta non pulvinar neque laoreet suspendisse interdum. Vitae ultricies
-                                    leo integer malesuada nunc. Imperdiet proin fermentum leo vel orci porta non
-                                    pulvinar neque. Fermentum leo vel orci porta non. Posuere sollicitudin aliquam
-                                    ultrices sagittis. Aliquam faucibus purus in massa tempor nec.</p>
-                            </div>
-
-                            <div class="work-experience">
-                                <small class="date">2017-2015</small>
-                                <h3 class="h5 date-title">Web developer - <a href="http://mashup-template.com"
-                                        title="">Mashup Template</a></h3>
-
-                                <p>Fermentum leo vel orci porta non. Posuere sollicitudin aliquam ultrices sagittis.
-                                    Aliquam faucibus purus in massa tempor nec.</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="card">
-                        <div class="card-block">
-                            <h2>Education</h2>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="education-experience">
-                                        <small class="date">2017-2015</small>
-                                        <h3 class="h5 date-title">Design Master</h3>
-                                        <p>Chicago University</p>
-                                    </div>
-
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="education-experience">
-                                        <small class="date">2015-2012</small>
-                                        <h3 class="h5 date-title">Metrics Degree</h3>
-                                        <p>Ecole 87</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="education-experience">
-                                        <small class="date">2012-2011</small>
-                                        <h3 class="h5 date-title">Motion Design Course</h3>
-                                        <p>Pascal’s Lee Studio</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-block">
-                            <h2>Language</h2>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="language-experience">
-                                        <h3 class="h5">English <small>Bilingual</small></h3>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="language-experience">
-                                        <h3 class="h5">French <small>Fluent</small></h3>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="language-experience">
-                                        <h3 class="h5">Russian <small>Beginner</small></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-block">
-                            <h2>Projects</h2>
-                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-
-
-                                <!-- Wrapper for slides -->
-                                <div class="carousel-inner" role="listbox">
-                                    <div class="item active">
-                                        <img src="./assets/images/img-05.jpg" class="img-responsive" alt="...">
-                                        <div class="carousel-caption">
-                                            <h3 class="h5">Jules for Bastion</h3>
-                                            <p>2017</p>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <img src="./assets/images/img-06.jpg" class="img-responsive" alt="...">
-                                        <div class="carousel-caption">
-                                            <h3 class="h5">Jules for Bastion</h3>
-                                            <p>2017</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="item">
-                                        <img src="./assets/images/img-08.jpg" class="img-responsive" alt="...">
-                                        <div class="carousel-caption">
-                                            <h3 class="h5">Jules for Bastion</h3>
-                                            <p>2017</p>
+                                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                                                id="portfolioModal1Label">{{project.title}}</h2>
+                                            <!-- Icon Divider-->
+                                            <div class="divider-custom">
+                                                <div class="divider-custom-line"></div>
+                                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                                <div class="divider-custom-line"></div>
+                                            </div>
+                                            <!--  Modal - Text-->
+                                            <p class="mb-5">
+                                                {{project.description}}
+                                            </p>
+                                            <p>
+                                                {%for stack in project.stack.all %}
+                                                <span class="btn btn-primary btn-sm mr-1 mt-1">{{stack}}</span>
+                                                {% endfor %}
+                                            </p>
+                                            <button class="btn btn-secondary" data-dismiss="modal">
+                                                <i class="fas fa-times fa-fw"></i>
+                                                Close Window
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
-
-                                <!-- Indicators -->
-                                <ol class="carousel-indicators">
-                                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                                </ol>
-
                             </div>
                         </div>
                     </div>
+                </div>
+                {% endfor %}
+            </div>
 
-                    <div class="card">
-                        <div class="card-block">
-                            <h2>Social Network</h2>
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <p class="social-buttons"><a href="https://twitter.com/" title=""><span
-                                                class="social-round-icon fa-icon"><i
-                                                    class="fa fa-twitter"></i></span>@David_Folley</a></p>
-                                </div>
-                                <div class="col-md-3">
-                                    <p class="social-buttons"><a href="https://www.linkedin.com/" title=""><span
-                                                class="social-round-icon fa-icon"><i
-                                                    class="fa fa-linkedin"></i></span>David Folley</a></p>
-                                </div>
-                                <div class="col-md-3">
-                                    <p class="social-buttons"><a href="https://dribbble.com/" title=""><span
-                                                class="social-round-icon fa-icon"><i
-                                                    class="fa fa-dribbble"></i></span>David Folley</a></p>
+        </div>
+        </div>
+    </section>
+    <!-- Work Experience -->
+    <section class="page-section portfolio bg-primary text-dark mb-0" id="work-experience">
+        <div class="container">
+            <!-- Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-dark mb-0">Work Experience</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Grid Items-->
+            <div class="row">
+                <!-- Work Item-->
+                {%for job in jobs.all%}
+                <div class="col-md-6 mb-5">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#workModal{{job.id}}">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-thumbnail" src="{{job.image.url}}" alt="" />
+                    </div>
+                </div>
+                <!-- Work Modal -->
+                <div class="portfolio-modal modal fade" id="workModal{{job.id}}" tabindex="-1" role="dialog"
+                    aria-labelledby="portfolioModal1Label" aria-hidden="true">
+                    <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                            </button>
+                            <div class="modal-body text-center">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-8">
+                                            <!-- WorkModal - Title-->
+                                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                                                id="portfolioModal1Label">{{job.role}} - {{job.company}}</h2>
+                                            <!-- Icon Divider-->
+                                            <div class="divider-custom">
+                                                <div class="divider-custom-line"></div>
+                                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                                <div class="divider-custom-line"></div>
+                                            </div>
+
+
+                                            <!--  Modal - Text-->
+                                            <p class="mb-5">
+                                                {{job.description}}
+                                            <ul>
+
+
+                                                {%for contribution in job.contributions_as_list%}
+                                                <li>{{contribution}}</li>
+                                                {% endfor %}
+                                            </ul>
+                                            </p>
+                                            <button class="btn btn-primary" data-dismiss="modal">
+                                                <i class="fas fa-times fa-fw"></i>
+                                                Close Window
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
 
-                    <div class="card">
-                        <div class="card-block">
-                            <h2>Contact</h2>
-                            <form action="" class="reveal-content">
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="email" placeholder="Email">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                </div>
-                                <div class="form-group">
-                                    <textarea class="form-control" rows="5" placeholder="Enter your message"></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <button type="submit" class=" btn btn-primary">Send message</button>
-                                </div>
-                            </form>
+    <!-- Education Section -->
+    <section class="page-section" id="education">
+        <div class="container">
+            <h2 class="page-section-heading text-center text-uppercase text-dark">Education</h2>
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <div class="row">
+                <div class="col-9">
+                    <h3>Dayananda Sagar College of Engineering</h3>
+
+                    <p class="lead mb-0"> Bachelor of Engineering - Computer Science</p>
+                    <p class="m-0">Bangalore, Karnataka</p>
+                    <p class="my-1 btn btn-sm btn-primary text-dark" id="cgpa">CGPA : 9.16</p>
+                </div>
+                <div class="col-3">
+                    <h5 class="text-secondary">2016 - 2020</h5>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- About Section-->
+    <section class="page-section bg-primary text-white mb-0" id="about">
+        <div class="container">
+            <!-- About Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- About Section Content-->
+            <div class="row">
+                <div class="col-lg-4 ml-auto">
+                    <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download
+                        includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS
+                        stylesheets for easy customization.</p>
+                </div>
+                <div class="col-lg-4 mr-auto">
+                    <p class="lead">You can create your own custom avatar for the masthead, change the icon in the
+                        dividers, and add your email address to the contact form to make it fully functional!</p>
+                </div>
+            </div>
+            <!-- About Section Button-->
+            <div class="text-center mt-4">
+                <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/themes/freelancer/">
+                    <i class="fas fa-download mr-2"></i>
+                    Free Download!
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section-->
+    <section class="page-section" id="contact">
+        <div class="container">
+            <!-- Contact Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Contact Section Form-->
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
+                    <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                <label>Name</label>
+                                <input class="form-control" id="name" type="text" placeholder="Name" required="required"
+                                    data-validation-required-message="Please enter your name." />
+                                <p class="help-block text-danger"></p>
+                            </div>
                         </div>
-                    </div>
-
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                <label>Email Address</label>
+                                <input class="form-control" id="email" type="email" placeholder="Email Address"
+                                    required="required"
+                                    data-validation-required-message="Please enter your email address." />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                <label>Phone Number</label>
+                                <input class="form-control" id="phone" type="tel" placeholder="Phone Number"
+                                    required="required"
+                                    data-validation-required-message="Please enter your phone number." />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                <label>Message</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Message"
+                                    required="required"
+                                    data-validation-required-message="Please enter a message."></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <br />
+                        <div id="success"></div>
+                        <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton"
+                                type="submit">Send</button></div>
+                    </form>
                 </div>
             </div>
         </div>
-
-    </main>
-    <footer class="footer-container white-text-container text-center">
+    </section>
+    <!-- Footer-->
+    <footer class="footer text-center">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12">
-                    <p><img src="./assets/images/mashup-icon.svg" alt=""></p>
-
-                    <p>©All right reserved. Design <a href="http://www.mashup-template.com/"
-                            title="Create website with free html template">Mashup Template</a>/<a
-                            href="https://unsplash.com/" title="Beautiful Free Images">Unsplash</a></p>
-                    <p>
-                        <a class="fa-icon fa-icon-2x" href="https://facebook.com/" title="">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                        <a class="fa-icon fa-icon-2x" href="https://twitter.com/" title="">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                        <a class="fa-icon fa-icon-2x" href="https://dribbble.com/" title="">
-                            <i class="fa fa-dribbble"></i>
-                        </a>
-                        <a class="fa-icon fa-icon-2x" href="https://www.linkedin.com/" title="">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
-                        <a class="fa-icon fa-icon-2x" href="https://vimeo.com/" title="">
-                            <i class="fa fa-vimeo"></i>
-                        </a>
+                <!-- Footer Location-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Location</h4>
+                    <p class="lead mb-0">
+                        2215 John Daniel Drive
+                        <br />
+                        Clark, MO 65243
+                    </p>
+                </div>
+                <!-- Footer Social Icons-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Around the Web</h4>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i
+                            class="fab fa-fw fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i
+                            class="fab fa-fw fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                </div>
+                <!-- Footer About Text-->
+                <div class="col-lg-4">
+                    <h4 class="text-uppercase mb-4">About Freelancer</h4>
+                    <p class="lead mb-0">
+                        Freelance is a free to use, MIT licensed Bootstrap theme created by
+                        <a href="http://startbootstrap.com">Start Bootstrap</a>
+                        .
                     </p>
                 </div>
             </div>
         </div>
     </footer>
+    <!-- Copyright Section-->
+    <div class="copyright py-4 text-center text-white">
+        <div class="container"><small>Copyright © Your Website 2020</small></div>
+    </div>
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
+    <div class="scroll-to-top d-lg-none position-fixed">
+        <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i
+                class="fa fa-chevron-up"></i></a>
+    </div>
+    <!-- Portfolio Modals-->
+    <!-- Portfolio Modal 1-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog"
+        aria-labelledby="portfolioModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                                    id="portfolioModal1Label">Log Cabin</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="" />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
+                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
+                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                </p>
+                                <button class="btn btn-primary" data-dismiss="modal">
+                                    <i class="fas fa-times fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Contact form JS-->
+    <script src="assets/mail/jqBootstrapValidation.js"></script>
+    <script src="assets/mail/contact_me.js"></script>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function (event) {
-            scrollRevelation('.card');
-        });
-    </script>
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
-
-<script>
-  (function (i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-      (i[r].q = i[r].q || []).push(arguments)
-    }, i[r].l = 1 * new Date(); a = s.createElement(o),
-      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-  ga('create', 'UA-XXXXX-X', 'auto');
-  ga('send', 'pageview');
-</script>
-
--->
+    <!-- Core theme JS-->
     <script type="text/javascript" src="{% static 'home.js' %}"></script>
 </body>
 
