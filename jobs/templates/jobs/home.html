@@ -211,8 +211,17 @@
                                     class="fas fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img class="img-thumbnail" src="{% static 'job_{{job.id}}.jpeg'%}" alt="" />
-                        <button class="btn btn-secondary mt-2 ml-5">Contributions &rarr;</button>
+                        <div class="py-1 px-1 mx-1 my-1 img-thumbnail">
+                            <h4> {{job.company}}</h4>
+                            <p> {{job.role}}</p>
+                            <p>
+                                {%for stack in job.stack.all %}
+                                <span class="btn btn-primary btn-sm mr-1 mt-1">{{stack}}</span>
+                                {% endfor %}
+                            </p>
+                            <button class="btn btn-secondary mt-2 ml-5">Contributions &rarr;</button>
+                        </div>
+
                     </div>
                 </div>
                 <!-- Work Modal -->
