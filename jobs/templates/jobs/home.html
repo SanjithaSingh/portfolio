@@ -212,6 +212,7 @@
                             </div>
                         </div>
                         <img class="img-thumbnail" src="{{job.image.url}}" alt="" />
+                        <button class="btn btn-secondary mt-2 ml-5">Contributions &rarr;</button>
                     </div>
                 </div>
                 <!-- Work Modal -->
@@ -227,8 +228,10 @@
                                     <div class="row justify-content-center">
                                         <div class="col-lg-8">
                                             <!-- WorkModal - Title-->
-                                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
-                                                id="portfolioModal1Label">{{job.role}} - {{job.company}}</h2>
+                                            <h2 class="portfolio-modal-title text-secondary text-uppercase"
+                                                id="portfolioModal1Label">{{job.company}}</h2>
+                                            <h4 class="text-uppercase">{{job.role}}</h4>
+                                            <h6>{{job.startDate | date:"M Y" }} - {{job.endDate | date:"M Y" }}</h6>
                                             <!-- Icon Divider-->
                                             <div class="divider-custom">
                                                 <div class="divider-custom-line"></div>
@@ -236,18 +239,23 @@
                                                 <div class="divider-custom-line"></div>
                                             </div>
 
+                                            <div class="text-left">
+                                                <!--  Modal - Text-->
+                                                <div class=" h5 text-uppercase">Project</div>
+                                                <span class="lead font-weight-bold btn btn-secondary">{{job.project}}
+                                                </span>
+                                                <p class="mb-5">
+                                                    {{job.description}}
+                                                </p>
+                                                <h5 class="text-uppercase">Contributions</h5>
+                                                <ul>
+                                                    {%for contribution in job.contributions_as_list%}
+                                                    <li>{{contribution}}</li>
+                                                    {% endfor %}
+                                                </ul>
 
-                                            <!--  Modal - Text-->
-                                            <p class="mb-5">
-                                                {{job.description}}
-                                            <ul>
 
-
-                                                {%for contribution in job.contributions_as_list%}
-                                                <li>{{contribution}}</li>
-                                                {% endfor %}
-                                            </ul>
-                                            </p>
+                                            </div>
                                             <button class="btn btn-primary" data-dismiss="modal">
                                                 <i class="fas fa-times fa-fw"></i>
                                                 Close Window
@@ -392,7 +400,7 @@
     </footer>
     <!-- Copyright Section-->
     <div class="copyright py-4 text-center text-white">
-        <div class="container"><small>Copyright © sanjitha-singh 2020</small></div>
+        <div class="container"><small>Copyright © sanjitha-singh 2020 | Built with Django</small></div>
     </div>
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
     <div class="scroll-to-top d-lg-none position-fixed">
