@@ -10277,3 +10277,7 @@ form .row:first-child .floating-label-form-group {
 .faded-icon{
   color: lightgray!important;
 }
+
+.volunteer li{
+  font-size: 1.2rem;
+}

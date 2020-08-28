@@ -292,7 +292,7 @@
     <section class="page-section bg-primary text-white mb-0" id="about">
         <div class="container">
             <!-- About Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+            <h2 class="page-section-heading text-center text-uppercase text-dark">About</h2>
             <!-- Icon Divider-->
             <div class="divider-custom divider-light">
                 <div class="divider-custom-line"></div>
@@ -300,23 +300,37 @@
                 <div class="divider-custom-line"></div>
             </div>
             <!-- About Section Content-->
-            <div class="row">
+            <div class="row text-dark">
                 <div class="col-lg-4 ml-auto">
-                    <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download
-                        includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS
-                        stylesheets for easy customization.</p>
+                    <p class="lead">I am an aspiring full-stack developer and data scientist looking for exciting and
+                        challenging opportunities to learn, grow and build something I can be proud of. <br> I love
+                        getting
+                        my hands dirty with something new everyday. Constant improvement, both technically and
+                        personally,
+                        is my priority.</p>
                 </div>
                 <div class="col-lg-4 mr-auto">
-                    <p class="lead">You can create your own custom avatar for the masthead, change the icon in the
-                        dividers, and add your email address to the contact form to make it fully functional!</p>
+                    <div class="volunteer">
+                        <h5 class='text-uppercase'>Volunteered At</h5>
+                        <p class="h6">Shree Sai Sadhbhaavana School</p>
+                        <ul>
+                            <li>Computer Coach for staff and students</li>
+                            <li>Substitute English and Science teacher</li>
+                        </ul>
+                        <h5 class='text-uppercase'>Interests</h5>
+                        <ul>
+                            <li>Reading fiction and non-fiction</li>
+                            <li>Writing Novellas</li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
             <!-- About Section Button-->
             <div class="text-center mt-4">
-                <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/themes/freelancer/">
-                    <i class="fas fa-download mr-2"></i>
-                    Free Download!
-                </a>
+                {% for skill in skills.all%}
+                <span class="btn btn-secondary my-1">{{skill}}</span>
+                {% endfor %}
             </div>
         </div>
     </section>
