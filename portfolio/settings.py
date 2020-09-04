@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
@@ -19,14 +21,12 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'd8=%!@=te1ovj0gv^mdw%*jpfv#yv2+yef&%5#*g3oa1)77u#d'
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['cryptic-thicket-04907.herokuapp.com']
+ALLOWED_HOSTS = ['sanjitha-singh.herokuapp.com/']
 
 
 # Application definition
@@ -82,7 +82,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'daldj3okm87uqs',
         'USER': 'ovdkmrmwdzjhyh',
-        'PASSWORD': '4aa890060aff56762999564fc27460e16cafd99c78953748fd8ffec2654f2b6c',
+        'PASSWORD': os.getenv('DATABASE_PASSWORD'),
         'HOST':'ec2-54-166-107-5.compute-1.amazonaws.com'
     }
 }
