@@ -14,6 +14,7 @@ from pathlib import Path
 import os
 from dotenv import load_dotenv
 load_dotenv()
+import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
@@ -26,7 +27,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['sanjitha-singh.herokuapp.com']
+ALLOWED_HOSTS = ['*','sanjitha-singh.herokuapp.com']
 
 
 # Application definition
@@ -80,10 +81,10 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'daldj3okm87uqs',
-        'USER': 'ovdkmrmwdzjhyh',
+        'NAME': os.environ.get('DATABASE_NAME'),
+        'USER': os.environ.get('DATABASE_USER'),
         'PASSWORD': os.environ.get('DATABASE_PASSWORD'),
-        'HOST':'ec2-54-166-107-5.compute-1.amazonaws.com'
+        'HOST':os.environ.get('DATABASE_HOST'),
     }
 }
 
@@ -129,3 +130,4 @@ STATIC_ROOT = os.path.join(BASE_DIR,'static')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR
+django_heroku.settings(locals())
